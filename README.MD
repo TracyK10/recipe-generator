@@ -1,4 +1,4 @@
-### AI Recipe Generator
+# AI Recipe Generator
 
 This project is an AI-powered recipe generator that creates easy-to-follow recipes based on user instructions. The application is built with modern web technologies and leverages an AI API to generate the recipes.
 
