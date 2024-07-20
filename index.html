@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tracy Karanja | Recipe Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
@@ -11,33 +17,48 @@
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI Recipe Generator</h1>
-    </header>
-    <main>
-      <form id="recipe-generator-form">
-        <input
-          type="text"
-          placeholder="What do you want the recipe for?"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="recipe" id="recipe"></div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/TracyK10" target="_blank" rel="noopener">Tracy Karanja</a> and is
-      open-sourced on
-      <a href="https://github.com/TracyK10/recipe-generator" target="_blank" rel="noopener">Github</a> and is
-      hosted on
-      <a href="https://tracy-karanja-recipe-generator.netlify.app/" target="_blank" rel="noopener">Netlify</a>
-    </footer>
-</div>
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="What would you like a recipe for?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e Cake, cookies, pancakes</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/TracyK10" target="_blank" rel="noopener"
+          >Tracy Karanja</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/TracyK10/recipe-generator"
+          target="_blank"
+          rel="noopener"
+          >Github</a
+        >
+        and is hosted on
+        <a
+          href="https://tracy-karanja-recipe-generator.netlify.app/"
+          target="_blank"
+          rel="noopener"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>

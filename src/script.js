@@ -19,6 +19,10 @@ function generateRecipe(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt
   }&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe")
+  recipeElement.classList.remove("hidden")
+    recipeElement.innerHTML = `<div class="blink">👩🏽‍🍳 Generating recipe for ${instructions}..</div>`;
+
   console.log("generating recipe");
   axios.get(apiUrl).then(displayRecipe);
 }
