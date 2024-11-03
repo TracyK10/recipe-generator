@@ -5,6 +5,7 @@ body{
     background-image: url(https://i.pinimg.com/564x/e9/36/06/e936061fa6d5494cb4241a3d6db37163.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header{
     margin-bottom: 30px;
